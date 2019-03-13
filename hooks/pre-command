@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+args=()
+
+args+=("--verbose")
+
+if [[ "${BUILDKITE_PLUGIN_AZURE_LOGIN_USE_IDENTITY:-}" =~ ^(true|on|1)$ ]]; then
+    args+=("--identity")
+fi
+
+az login "${args[@]}"
