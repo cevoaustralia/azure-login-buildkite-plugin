@@ -1,0 +1,11 @@
+---
+name: Azure Login
+description: Login to Azure CLI using `az login`
+author: https://github.com/cevoaustralia
+requirements:
+  - az
+configuration:
+  properties:
+    use_identity:
+      type: boolean
+
