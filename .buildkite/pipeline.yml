@@ -8,7 +8,7 @@ steps:
   - label: ":sparkles:"
     plugins:
       plugin-linter#v2.0.0:
-        id: docker
+        id: cevoaustralia/azure-login
 
   - label: ":docker: :hammer:"
     plugins:
