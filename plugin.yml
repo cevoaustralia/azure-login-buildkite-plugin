@@ -6,6 +6,6 @@ requirements:
   - az
 configuration:
   properties:
-    use_identity:
+    use-identity:
       type: boolean
 

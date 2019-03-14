@@ -17,7 +17,7 @@ The following pipeline will list all vms in the subscription after interactively
 steps:
   - command: "az vm list"
     plugins:
-      - cevoaustralia/azure-login#v0.0.1:
+      - cevoaustralia/azure-login#v0.0.1: ~
 ```
 
 If you want to use the identity of the agent instance to login:
@@ -27,13 +27,13 @@ steps:
   - command: "az vm list"
     plugins:
       - cevoaustralia/azure-login#v0.0.1:
-            use_identity: true
+            use-identity: true
 ```
 
 ## Configuration
 
 ### Optional
 
-#### `use_identity` (boolean)
+#### `use-identity` (boolean)
 
 Log in to Azure using the agent instace's identity (passes `--identiy`) to `az login`
